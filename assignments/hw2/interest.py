@@ -8,7 +8,7 @@ def main():
     billing_cycle = eval(input('how many days are in a billing cycle?: '))
     p_net_balance = eval(input('what was the previous net balance?: '))
     payment = eval(input('what is the payment amount?: '))
-    date_of_payment = eval(input('what was the day of the month that the payment was made?''(enter only a number):'))
+    date_of_payment = eval(input('what was the date of the month that the payment was made?:'))
     days_left_in_cycle = billing_cycle - date_of_payment
     step_1 = p_net_balance * billing_cycle
     step_2 = payment * days_left_in_cycle
