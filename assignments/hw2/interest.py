@@ -23,3 +23,6 @@ def main():
     monthly_interest_rate = annual_interest_decimal / 12
     monthly_interest_charge = round(average_daily_balance * monthly_interest_rate,2)
     print(monthly_interest_charge)
+
+if __name__ == '__main__':
+    main()
