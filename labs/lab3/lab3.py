@@ -1,5 +1,5 @@
 """
-Name: Robert
+Name: Robert Stenback
 lab3.py
 """
 
