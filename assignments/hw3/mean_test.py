@@ -1,9 +1,7 @@
 import json
 import pytest
-import random
-import requests
 from tests import code_style
-from hw3 import mean
+import mean
 from tests import api_service
 
 total = 0
@@ -38,7 +36,7 @@ class TestClass:
     def test_linting(self):
         global code_style_points
         global total
-        points = code_style.code_style('mean.py', code_style_points)
+        points = code_style.code_style('../../class/mean1.py', code_style_points)
         total += points
         if not points == code_style_points:
             pytest.xfail(reason="Failed Code Style")
