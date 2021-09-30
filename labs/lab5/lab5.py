@@ -51,8 +51,11 @@ def triangle():
     # and display its area in the graphics window.
     s = (p1_p2 + p2_p3 + p3_p1) / 2
     area = (s * (s - p1_p2) * (s - p2_p3) * (s - p3_p1)) ** (1/2)
-    area_text = Text(Point(win_width / 2 , 100), 'the area is'+ str(area))
+    area_text = Text(Point(win_width / 2 , 100), 'the area is '+ str(area))
     area_text.draw(win)
+    perimeter = p1_p2 + p2_p3 + p3_p1
+    per_text = Text(Point(win_width / 2 , 120), 'the perimeter is '+ str(perimeter))
+    per_text.draw(win)
     # Wait for another click to exit
     win.getMouse()
     win.close()
