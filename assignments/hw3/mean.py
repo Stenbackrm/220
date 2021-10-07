@@ -9,7 +9,7 @@ def main():
     acc_s = 0
     acc_p = 1
     for i in range(n_of_values):
-        values = eval(input('what is value '))
+        values = eval(input('what is value'))
         inverses = 1 / values
         acc_in = acc_in + inverses
         squares = values ** 2
