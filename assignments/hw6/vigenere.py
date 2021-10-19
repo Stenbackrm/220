@@ -48,11 +48,9 @@ def main():
     s = s_box.getText()
     k = k_box.getText()
 
-
     msg_3 = 'Result: ' + code(s,k)
     inst = Text(Point(win_width / 2 - 150, win_height - 120), msg_3)
     inst.draw(win)
-
     win.getMouse()
 
 if __name__ == '__main__':
