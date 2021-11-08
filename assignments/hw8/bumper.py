@@ -46,9 +46,11 @@ def main():
     move_amount = 10
     win = GraphWin(title, win_width, win_height)
 
-    start_point_1 = Point(randint(1, 499), randint(1, 499))
-    start_point_2 = Point(randint(1, 499), randint(1, 499))
     radius = 30
+    start_point_1 = Point(randint(radius, win_width - radius),
+                          randint(radius, win_height - radius))
+    start_point_2 = Point(randint(radius, win_width - radius),
+                          randint(radius, win_height - radius))
 
     circle_1 = Circle(start_point_1, radius)
     circle_1.setFill(get_random_color())
