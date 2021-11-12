@@ -1,5 +1,5 @@
 """
-Name: Robert Stenback
+Name: Robert Stenback's
 Hangman.py
 """
 from random import randint
