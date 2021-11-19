@@ -5,9 +5,15 @@ button class file for three door game
 from graphics import Text
 
 class Button:
+
     def __init__(self, Rectangle_shape, String_label):
         self.shape = Rectangle_shape
         self.text = Text(Rectangle_shape.getCenter(), String_label)
+
+    """
+     this class defines a button given its shape <Rectangle_shape> and its
+     label <String_label>
+     """
 
     def get_label(self):
         label = self.text.getText()
@@ -31,4 +37,4 @@ class Button:
     def color_button(self, color):
         self.shape.setFill(color)
     def set_label(self, label):
-        self.text = Text(self.shape.getCenter, label)
+        self.text = self.text.setText(label)

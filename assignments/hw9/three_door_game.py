@@ -3,9 +3,10 @@ Robert Stenback's three door game
 """
 from random import randint
 from graphics import Rectangle, Point, GraphWin, Text
-from button import Button
+from Button import Button
 
 def main():
+
     width = 600
     height = 500
     win_name = 'Three Door Game'
@@ -22,15 +23,16 @@ def main():
     button_1 = Button(button_1_rec, door_2_txt)
     button_1.draw(win)
 
-    button_2_rec = button_1_rec.clone()
+    button_2_rec = Rectangle(point_1, point_2)
     button_2_rec.move(150, 0)
     button_2 = Button(button_2_rec, door_3_txt)
     button_2.draw(win)
 
-    button_3_rec = button_1_rec.clone()
+    button_3_rec = Rectangle(point_1, point_2)
     button_3_rec.move(-150, 0)
     button_3 = Button(button_3_rec, door_1_txt)
     button_3.draw(win)
+
 
     point = win.getMouse()
     rand_num = randint(1, 3)
