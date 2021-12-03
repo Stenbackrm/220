@@ -24,7 +24,7 @@ class SalesPerson:
         self.name = name
 
     def enter_sale(self, sale):
-        sale = int(sale)
+        sale = float(sale)
         self.sales.append(sale)
 
     def total_sales(self):
@@ -41,10 +41,7 @@ class SalesPerson:
             return -1
         if self.total_sales() > other.total_sales():
             return 1
-        else:
-            return 0
+        return 0
 
     def __str__(self):
-        return "{0}-{1} {2}".format(self.get_id(), self.get_name(), self.get_sales())
-
-
+        return "{0}-{1}: {2}".format(self.get_id(), self.get_name(), self.total_sales())
